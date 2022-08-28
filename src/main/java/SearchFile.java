@@ -7,8 +7,8 @@ import java.util.List;
 public class SearchFile {
     private static final String PATH = "data";
 
-    static List<String> jsonList = new ArrayList<>();
-    static List<String> csvList = new ArrayList<>();
+    private static List<String> jsonList = new ArrayList<>();
+    private static List<String> csvList = new ArrayList<>();
 
     static final StringBuilder BUILDER_JSON = new StringBuilder();
     static final StringBuilder BUILDER_CSV = new StringBuilder();
