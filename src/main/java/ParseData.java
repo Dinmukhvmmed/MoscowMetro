@@ -12,8 +12,8 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class ParseData {
-    public static List<Station> stationList = new LinkedList<>();
-    public static Set<Station> stationIndex = new HashSet<>();
+    private static List<Station> stationList = new LinkedList<>();
+    private static Set<Station> stationIndex = new HashSet<>();
 
     private static String getBuilderJson() {
         return SearchFile.BUILDER_JSON.toString().replaceAll("]\n\\[", "")
@@ -28,7 +28,6 @@ public class ParseData {
 
     }
 
-    //Метод для рекурсивного обхода дерева папок
     public static void jsonParser() {
         try {
             JSONParser parser = new JSONParser();
